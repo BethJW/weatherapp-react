@@ -14,6 +14,7 @@ export default function Weather() {
       feelsLike: response.data.main.feels_like,
       description: response.data.weather[0].description,
       visibility: response.data.visibility,
+      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Weather_icon_-_sunny.svg/512px-Weather_icon_-_sunny.svg.png",
     });
 
     setReady(true);
@@ -46,10 +47,7 @@ export default function Weather() {
               </ul>
             </div>
             <div className="col-2 icon">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Weather_icon_-_sunny.svg/512px-Weather_icon_-_sunny.svg.png"
-                alt="sun"
-              />
+              <img src={weatherData.icon} />
             </div>
             <div className="col-5">
               <ul className="weatherData">
