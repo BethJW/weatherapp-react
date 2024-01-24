@@ -3,7 +3,18 @@
   border: 1px solid black;
   background-color: antiquewhite;
   max-width: 600px;
+  min-width: 600px;
 }
+.search-form {
+  margin-top: 10px;
+}
+.search-bar {
+  padding: 4px;
+}
+.search-btn {
+  padding: 4px;
+}
+
 .row-container {
   margin: 20px;
 }
@@ -19,7 +30,8 @@ img {
 }
 .city {
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 .date,
 .time {
@@ -35,7 +47,7 @@ img {
   margin-top: -10px;
 }
 ul.weatherData {
-  margin-top: 68px;
+  margin-top: 100px;
   text-align: start;
   margin-left: 60px;
 }
