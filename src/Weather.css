@@ -42,7 +42,9 @@ h1.city {
 .time {
   font-size: 20px;
 }
-
+.time {
+  font-size: 30px;
+}
 .currentTemp {
   margin-top: 10px;
   font-size: 38px;
