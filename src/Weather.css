@@ -16,7 +16,6 @@
 }
 
 .row-container {
-  margin: 20px;
 }
 
 ul {
@@ -24,14 +23,16 @@ ul {
   padding: 0px;
   margin: 0px;
 }
-img {
-  width: 180px;
-  margin: 60px -70px;
+.icon {
+  width: 150px;
+  margin-left: -10px;
 }
-.city {
+h1.city {
   font-size: 40px;
-  margin-top: 20px;
-  margin-left: 20px;
+  text-align: center;
+  margin-top: 10px;
+  padding: 0px;
+  margin-left: 30px;
 }
 .date,
 .time {
@@ -39,7 +40,7 @@ img {
 }
 
 .currentTemp {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 38px;
 }
 .currentCond {
@@ -48,6 +49,9 @@ img {
 }
 ul.weatherData {
   margin-top: 100px;
-  text-align: start;
-  margin-left: 60px;
+  text-align: center;
+}
+
+ul.weatherInfo {
+  text-align: center;
 }

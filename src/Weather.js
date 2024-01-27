@@ -19,7 +19,7 @@ export default function Weather(props) {
       feelsLike: response.data.main.feels_like,
       description: response.data.weather[0].description,
       visibility: response.data.visibility,
-      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Weather_icon_-_sunny.svg/512px-Weather_icon_-_sunny.svg.png",
+      icon: response.data.weather[0].icon,
     });
 
     setReady(true);
