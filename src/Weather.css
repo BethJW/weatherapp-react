@@ -61,3 +61,13 @@ ul.weatherData {
 ul.weatherInfo {
   text-align: center;
 }
+.unit {
+  color: rgb(11, 11, 11);
+  font-size: 30px;
+  position: relative;
+  top: -5px;
+}
+.unit a {
+  text-decoration: none;
+  color: rgb(129, 4, 246);
+}
