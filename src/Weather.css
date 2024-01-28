@@ -4,12 +4,14 @@
   background-color: rgb(231, 216, 249);
   max-width: 600px;
   min-width: 600px;
+  border-radius: 10px;
 }
 .search-form {
   margin-top: 10px;
 }
 .search-bar {
   padding: 4px;
+  border-radius: 5px;
 }
 .search-btn {
   padding: 4px;
@@ -17,6 +19,7 @@
   border: 1px solid black;
   margin-left: 5px;
   width: 80px;
+  border-radius: 5px;
 }
 
 .row-container {
