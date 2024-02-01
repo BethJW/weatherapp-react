@@ -1,0 +1,12 @@
+.forecastContainer {
+  margin: 20px 10px;
+}
+.days {
+  font-weight: bold;
+}
+.max {
+  color: rgb(129, 4, 246);
+}
+.f-icon {
+  display: flex;
+}
