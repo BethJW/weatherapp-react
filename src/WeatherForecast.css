@@ -10,4 +10,11 @@
 .icons .icon {
   display: flex;
   width: 80px;
+  margin-left: -5px;
+}
+.forecastContainer .row .days {
+  margin-left: 10px;
+}
+.forecastContainer .row .temperature {
+  margin-left: 5px;
 }
