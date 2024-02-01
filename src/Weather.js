@@ -20,6 +20,7 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       visibility: response.data.visibility,
       icon: response.data.weather[0].icon,
+      coord: response.data.coord,
     });
 
     setReady(true);
@@ -51,7 +52,7 @@ export default function Weather(props) {
             <input type="submit" value="search" className="search-btn w-20" />
           </form>
           <WeatherInfo data={weatherData} />
-          <WeatherForecast />
+          <WeatherForecast coord={weatherData.coord} />
         </div>
       </div>
     );
