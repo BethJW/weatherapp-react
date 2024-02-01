@@ -23,12 +23,15 @@ export default function WeatherForecast(props) {
         <div className="row">
           <h4>Weekly Forecast</h4>
           {forecast.map(function (dailyForecast, index) {
-            if (index < 6)
+            if (index < 6) {
               return (
                 <div className="col-2 icons" key={index}>
                   <ForecastDay data={dailyForecast} />
                 </div>
               );
+            } else {
+              return null;
+            }
           })}
         </div>
       </div>
