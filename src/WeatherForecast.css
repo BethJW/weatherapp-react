@@ -7,6 +7,7 @@
 .max {
   color: rgb(129, 4, 246);
 }
-.f-icon {
+.icons .icon {
   display: flex;
+  width: 80px;
 }

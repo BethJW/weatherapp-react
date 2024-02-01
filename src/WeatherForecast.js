@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./WeatherForecast.css";
-import Icon from "./Icon";
 import axios from "axios";
 import ForecastDay from "./ForecastDay";
 
@@ -9,15 +8,24 @@ export default function WeatherForecast(props) {
   let [forecast, setForecast] = useState(null);
   function handleResponse(response) {
     setForecast(response.data.daily);
+
     setReady(true);
   }
 
   if (ready) {
-    console.log(forecast);
     return (
       <div className="WeatherForecast forecastContainer">
-        <h4>Weekly Forecast</h4>
-        <ForecastDay data={forecast[0]} />
+        <div className="row">
+          <h4>Weekly Forecast</h4>
+          {forecast.map(function (dailyForecast, index) {
+            if (index < 6)
+              return (
+                <div className="col-2 icons" key={index}>
+                  <ForecastDay data={dailyForecast} />
+                </div>
+              );
+          })}
+        </div>
       </div>
     );
   } else {
